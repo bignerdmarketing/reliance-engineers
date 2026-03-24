@@ -26,11 +26,18 @@
   body {
     @apply font-body antialiased;
     color: #231F20;
+    line-height: 1.7;
+  }
+
+  /* Paragraph defaults — generous line-height for readability */
+  p {
+    line-height: 1.7;
   }
 
   /* Heading defaults */
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading tracking-tight;
+    line-height: 1.2;
   }
 }
 
