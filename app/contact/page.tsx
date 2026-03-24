@@ -10,6 +10,7 @@ const certifications = [
   'DOT Certified DBE',
   'Minority Business Enterprise (MBE)',
   'Small Business',
+  'Subcontinent Asian American-Owned',
   'SAM.gov Registered',
 ];
 
@@ -73,7 +74,7 @@ export default function ContactPage() {
                     <p className="text-sm font-body font-semibold text-accent uppercase tracking-widest mb-1">
                       Address
                     </p>
-                    <p className="text-gray-600">
+                    <p className="text-brand-muted">
                       30 Yarmouth Road<br />
                       Wellesley Hills, MA 02481
                     </p>
@@ -119,7 +120,7 @@ export default function ContactPage() {
                       </svg>
                       <div>
                         <p className="font-body font-semibold text-primary text-sm">{office.name}</p>
-                        <p className="text-gray-600 text-sm">{office.address}</p>
+                        <p className="text-brand-muted text-sm">{office.address}</p>
                       </div>
                     </div>
                   ))}

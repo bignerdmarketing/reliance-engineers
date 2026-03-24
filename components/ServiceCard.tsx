@@ -87,7 +87,7 @@ export function ServiceCard({ name, description, icon }: ServiceCardProps) {
       </div>
 
       <h3 className="text-xl font-heading font-bold text-primary mb-3">{name}</h3>
-      <p className="text-gray-600 leading-relaxed">{description}</p>
+      <p className="text-brand-muted leading-relaxed">{description}</p>
     </div>
   );
 }

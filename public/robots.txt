@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reliance-engineers.vercel.app/sitemap.xml

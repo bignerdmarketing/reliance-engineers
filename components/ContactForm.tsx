@@ -14,7 +14,7 @@ export function ContactForm() {
           </svg>
         </div>
         <h3 className="text-xl font-heading font-bold text-primary mb-2">Message Sent</h3>
-        <p className="text-gray-600">Thank you for reaching out. We will be in touch shortly.</p>
+        <p className="text-brand-muted">Thank you for reaching out. We will be in touch shortly.</p>
       </div>
     );
   }
@@ -29,29 +29,29 @@ export function ContactForm() {
     >
       <div className="grid md:grid-cols-2 gap-6">
         <div>
-          <label htmlFor="firstName" className="block text-sm font-body font-semibold text-gray-700 mb-2">
-            Name <span className="text-red-600" aria-hidden="true">*</span>
+          <label htmlFor="firstName" className="block text-sm font-body font-semibold text-brand-label mb-2">
+            Name <span className="text-brand-required" aria-hidden="true">*</span>
           </label>
           <input
             type="text"
             id="firstName"
             name="firstName"
             required
-            className="w-full px-4 py-3 border border-gray-200 rounded-xl font-body text-gray-900
+            className="w-full px-4 py-3 border border-brand-border rounded-xl font-body text-brand-input
                        focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
             style={{ transition: 'border-color 0.2s ease-out, box-shadow 0.2s ease-out' }}
             placeholder="Your name"
           />
         </div>
         <div>
-          <label htmlFor="phone" className="block text-sm font-body font-semibold text-gray-700 mb-2">
+          <label htmlFor="phone" className="block text-sm font-body font-semibold text-brand-label mb-2">
             Phone
           </label>
           <input
             type="tel"
             id="phone"
             name="phone"
-            className="w-full px-4 py-3 border border-gray-200 rounded-xl font-body text-gray-900
+            className="w-full px-4 py-3 border border-brand-border rounded-xl font-body text-brand-input
                        focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
             style={{ transition: 'border-color 0.2s ease-out, box-shadow 0.2s ease-out' }}
             placeholder="(555) 123-4567"
@@ -60,15 +60,15 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-body font-semibold text-gray-700 mb-2">
-          Email <span className="text-red-600" aria-hidden="true">*</span>
+        <label htmlFor="email" className="block text-sm font-body font-semibold text-brand-label mb-2">
+          Email <span className="text-brand-required" aria-hidden="true">*</span>
         </label>
         <input
           type="email"
           id="email"
           name="email"
           required
-          className="w-full px-4 py-3 border border-gray-200 rounded-xl font-body text-gray-900
+          className="w-full px-4 py-3 border border-brand-border rounded-xl font-body text-brand-input
                      focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
           style={{ transition: 'border-color 0.2s ease-out, box-shadow 0.2s ease-out' }}
           placeholder="your.email@agency.gov"
@@ -76,14 +76,14 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="organization" className="block text-sm font-body font-semibold text-gray-700 mb-2">
+        <label htmlFor="organization" className="block text-sm font-body font-semibold text-brand-label mb-2">
           Company / Organization
         </label>
         <input
           type="text"
           id="organization"
           name="organization"
-          className="w-full px-4 py-3 border border-gray-200 rounded-xl font-body text-gray-900
+          className="w-full px-4 py-3 border border-brand-border rounded-xl font-body text-brand-input
                      focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
           style={{ transition: 'border-color 0.2s ease-out, box-shadow 0.2s ease-out' }}
           placeholder="Your organization"
@@ -91,15 +91,15 @@ export function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-body font-semibold text-gray-700 mb-2">
-          Message <span className="text-red-600" aria-hidden="true">*</span>
+        <label htmlFor="message" className="block text-sm font-body font-semibold text-brand-label mb-2">
+          Message <span className="text-brand-required" aria-hidden="true">*</span>
         </label>
         <textarea
           id="message"
           name="message"
           required
           rows={5}
-          className="w-full px-4 py-3 border border-gray-200 rounded-xl font-body text-gray-900 resize-y
+          className="w-full px-4 py-3 border border-brand-border rounded-xl font-body text-brand-input resize-y
                      focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
           style={{ transition: 'border-color 0.2s ease-out, box-shadow 0.2s ease-out' }}
           placeholder="Tell us about your project or how we can help..."

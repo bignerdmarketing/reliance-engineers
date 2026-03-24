@@ -35,7 +35,7 @@ const services = [
   },
 ];
 
-const certifications = ['Small Business', 'Minority-Owned', 'DOT Certified DBE', 'MBE'];
+const certifications = ['Small Business', 'Minority-Owned Business', 'Subcontinent Asian American-Owned', 'DOT Certified DBE', 'MBE'];
 
 const featuredProjects = [
   {
@@ -125,7 +125,7 @@ export default function HomePage() {
             <h2 id="services-heading" className="text-3xl md:text-4xl font-heading font-bold text-primary">
               Engineering Services
             </h2>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            <p className="mt-4 text-brand-muted max-w-2xl mx-auto">
               Comprehensive infrastructure engineering expertise from concept through construction, delivered by a team with decades of experience on landmark projects.
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function HomePage() {
             <h2 id="projects-heading" className="text-3xl md:text-4xl font-heading font-bold text-primary">
               Landmark Projects
             </h2>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            <p className="mt-4 text-brand-muted max-w-2xl mx-auto">
               Our principals have led engineering on some of the most complex infrastructure projects in the nation.
             </p>
           </div>
@@ -160,7 +160,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-heading font-bold text-primary mb-3">
                   {project.project}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-brand-muted leading-relaxed">
                   {project.description}
                 </p>
               </div>

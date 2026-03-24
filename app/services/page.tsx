@@ -139,7 +139,7 @@ export default function ServicesPage() {
                     <span className={`text-lg font-body font-bold ${naics.primary ? 'text-accent' : 'text-primary'}`}>
                       {naics.code}
                     </span>
-                    <span className="text-gray-600">{naics.description}</span>
+                    <span className="text-brand-muted">{naics.description}</span>
                     {naics.primary && (
                       <span className="ml-auto text-xs font-body font-semibold text-accent bg-accent/10 px-2 py-1 rounded-full">
                         Primary
@@ -159,7 +159,7 @@ export default function ServicesPage() {
                     <span className={`text-lg font-body font-bold ${psc.primary ? 'text-accent' : 'text-primary'}`}>
                       {psc.code}
                     </span>
-                    <span className="text-gray-600 text-sm">{psc.description}</span>
+                    <span className="text-brand-muted text-sm">{psc.description}</span>
                     {psc.primary && (
                       <span className="ml-auto text-xs font-body font-semibold text-accent bg-accent/10 px-2 py-1 rounded-full whitespace-nowrap">
                         Primary

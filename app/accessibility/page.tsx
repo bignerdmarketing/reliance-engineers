@@ -31,27 +31,27 @@ export default function AccessibilityPage() {
           <div className="space-y-10">
             <div>
               <h2 className="text-2xl font-heading font-bold text-primary mb-4">Our Commitment</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-brand-muted leading-relaxed">
                 Reliance Engineers LLC is committed to ensuring digital accessibility for people with disabilities. We continually work to improve the user experience for everyone and apply the relevant accessibility standards to achieve this goal.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-heading font-bold text-primary mb-4">Conformance Standards</h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-brand-muted leading-relaxed mb-4">
                 We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA. These guidelines explain how to make web content more accessible for people with disabilities and more user-friendly for everyone.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-brand-muted leading-relaxed">
                 Our website is also designed to be consistent with Section 508 of the Rehabilitation Act, which requires that federal agencies&apos; electronic and information technology is accessible to people with disabilities.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-heading font-bold text-primary mb-4">Accessible Features</h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-brand-muted leading-relaxed mb-4">
                 We have taken the following measures to ensure accessibility of our website:
               </p>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
+              <ul className="list-disc list-inside text-brand-muted space-y-2">
                 <li>Skip navigation links to bypass repetitive content</li>
                 <li>Proper heading hierarchy for clear document structure</li>
                 <li>Descriptive alt text on all images</li>
@@ -67,43 +67,43 @@ export default function AccessibilityPage() {
 
             <div>
               <h2 className="text-2xl font-heading font-bold text-primary mb-4">Assistive Technologies</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-brand-muted leading-relaxed">
                 Our website is designed to be compatible with the following assistive technologies: screen readers (including NVDA, JAWS, and VoiceOver), screen magnification software, speech recognition software, and keyboard-only navigation.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-heading font-bold text-primary mb-4">Known Limitations</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-brand-muted leading-relaxed">
                 While we strive for full accessibility, some content may not yet be fully accessible. We are actively working to identify and resolve any accessibility issues. If you encounter any barriers, please let us know so we can address them promptly.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-heading font-bold text-primary mb-4">Feedback and Accommodation Requests</h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-brand-muted leading-relaxed mb-4">
                 We welcome your feedback on the accessibility of our website. If you encounter accessibility barriers or need information in an alternative format, please contact us:
               </p>
               <div className="p-6 bg-surface-muted rounded-2xl">
                 <p className="font-body font-semibold text-primary">Reliance Engineers LLC</p>
-                <p className="text-gray-600">30 Yarmouth Road, Wellesley Hills, MA 02481</p>
-                <p className="text-gray-600">Phone: 781-697-8304</p>
-                <p className="text-gray-600">Email: info@reliance-eng.com</p>
+                <p className="text-brand-muted">30 Yarmouth Road, Wellesley Hills, MA 02481</p>
+                <p className="text-brand-muted">Phone: 781-697-8304</p>
+                <p className="text-brand-muted">Email: info@reliance-eng.com</p>
               </div>
-              <p className="text-gray-600 leading-relaxed mt-4">
+              <p className="text-brand-muted leading-relaxed mt-4">
                 We will make reasonable efforts to respond to accessibility feedback within five business days and to provide the requested information in an accessible format.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-heading font-bold text-primary mb-4">Enforcement</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-brand-muted leading-relaxed">
                 If you are not satisfied with our response to your accessibility concern, you may file a complaint with the U.S. Department of Justice, Civil Rights Division, or contact your local disability rights organization for assistance.
               </p>
             </div>
 
             <div>
-              <p className="text-gray-500 text-sm italic">
+              <p className="text-brand-subtle text-sm italic">
                 This accessibility statement was last updated on January 1, 2026.
               </p>
             </div>

@@ -25,6 +25,12 @@ module.exports = {
         },
         brand: {
           text: '#231F20',
+          muted: '#5A6270',
+          subtle: '#8A929E',
+          label: '#3D4451',
+          input: '#1A1F2E',
+          border: '#D8DCE3',
+          required: '#B91C1C',
         },
       },
       fontFamily: {

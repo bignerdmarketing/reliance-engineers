@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface TeamMemberProps {
   name: string;
   title: string;
@@ -12,12 +14,14 @@ export function TeamMember({ name, title, bio, photoUrl, linkedin }: TeamMemberP
       {/* Photo or Initials */}
       <div className="w-28 h-28 mx-auto mb-6 rounded-full overflow-hidden bg-primary/10 ring-4 ring-primary/5">
         {photoUrl ? (
-          /* eslint-disable-next-line @next/next/no-img-element */
-          <img
+          <Image
             src={photoUrl}
             alt={`${name}, ${title}`}
+            width={112}
+            height={112}
             className="w-full h-full object-cover"
             loading="lazy"
+            unoptimized
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-primary/10">
@@ -30,7 +34,7 @@ export function TeamMember({ name, title, bio, photoUrl, linkedin }: TeamMemberP
 
       <h3 className="text-lg font-heading font-bold text-primary mb-1">{name}</h3>
       <p className="text-sm font-body font-semibold text-accent mb-4">{title}</p>
-      <p className="text-gray-600 text-sm leading-relaxed mb-4">{bio}</p>
+      <p className="text-brand-muted text-sm leading-relaxed mb-4">{bio}</p>
 
       {linkedin && (
         <a
