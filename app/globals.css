@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Skip link for 508 compliance */
+  .skip-link {
+    @apply absolute -top-10 left-4 z-50 bg-primary text-white px-4 py-2 rounded-b-md;
+    transition: top 0.2s ease-out;
+  }
+  .skip-link:focus {
+    @apply top-0;
+  }
+
+  /* Focus ring for accessibility — gold accent */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Body defaults */
+  body {
+    @apply font-body antialiased;
+    color: #231F20;
+  }
+
+  /* Heading defaults */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer components {
+  /* Government-style button base */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-body font-semibold rounded-lg
+           shadow-layered
+           hover:bg-primary-light hover:shadow-layered-lg hover:-translate-y-0.5
+           focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent
+           active:translate-y-0 active:shadow-layered;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, background-color 0.2s ease-out;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-accent text-primary-dark font-body font-semibold rounded-lg
+           shadow-layered
+           hover:bg-accent-light hover:shadow-layered-lg hover:-translate-y-0.5
+           focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary
+           active:translate-y-0 active:shadow-layered;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, background-color 0.2s ease-out;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white font-body font-semibold rounded-lg
+           hover:bg-white/10 hover:border-white/50
+           focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent
+           active:bg-white/5;
+    transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-20 md:py-28 px-6 md:px-12 lg:px-20;
+  }
+
+  /* Container */
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Card with layered shadow */
+  .card {
+    @apply bg-surface rounded-2xl shadow-layered p-8;
+    transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
+  }
+  .card:hover {
+    @apply shadow-layered-lg;
+  }
+
+  /* Certification badge */
+  .cert-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-primary/5 border border-primary/10 rounded-full
+           text-sm font-body font-medium text-primary;
+  }
+
+  /* Structural grid pattern background */
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(rgba(24,47,83,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(24,47,83,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
