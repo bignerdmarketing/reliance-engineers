@@ -27,10 +27,14 @@ export function ContactForm() {
       }}
       className="space-y-6"
     >
+      <p className="text-sm text-brand-muted">
+        Fields marked with <span className="text-brand-required font-semibold" aria-hidden="true">*</span>
+        <span className="sr-only">an asterisk</span> are required.
+      </p>
       <div className="grid md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="firstName" className="block text-sm font-body font-semibold text-brand-label mb-2">
-            Name <span className="text-brand-required" aria-hidden="true">*</span>
+            Name <span className="text-brand-required" aria-hidden="true">*</span><span className="sr-only"> (required)</span>
           </label>
           <input
             type="text"
@@ -61,7 +65,7 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="email" className="block text-sm font-body font-semibold text-brand-label mb-2">
-          Email <span className="text-brand-required" aria-hidden="true">*</span>
+          Email <span className="text-brand-required" aria-hidden="true">*</span><span className="sr-only"> (required)</span>
         </label>
         <input
           type="email"
@@ -92,7 +96,7 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="message" className="block text-sm font-body font-semibold text-brand-label mb-2">
-          Message <span className="text-brand-required" aria-hidden="true">*</span>
+          Message <span className="text-brand-required" aria-hidden="true">*</span><span className="sr-only"> (required)</span>
         </label>
         <textarea
           id="message"
