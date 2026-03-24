@@ -5,6 +5,20 @@ import { CTA } from '@/components/CTA';
 export const metadata: Metadata = {
   title: 'Services',
   description: 'Bridge and structural engineering, tunnel and underground construction, geotechnical engineering, project controls, and value engineering services from Reliance Engineers.',
+  alternates: {
+    canonical: 'https://reliance-engineers.vercel.app/services',
+  },
+  openGraph: {
+    title: 'Services | Reliance Engineers',
+    description: 'Bridge and structural engineering, tunnel and underground construction, geotechnical engineering, project controls, and value engineering services.',
+    type: 'website',
+    url: 'https://reliance-engineers.vercel.app/services',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Services | Reliance Engineers',
+    description: 'Bridge and structural engineering, tunnel and underground construction, geotechnical engineering, project controls, and value engineering services.',
+  },
 };
 
 const services = [

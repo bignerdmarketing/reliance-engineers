@@ -4,6 +4,20 @@ import { ContactForm } from '@/components/ContactForm';
 export const metadata: Metadata = {
   title: 'Contact Us',
   description: 'Get in touch with Reliance Engineers. Offices in Wellesley Hills MA, Bloomfield Hills MI, and Toronto ON.',
+  alternates: {
+    canonical: 'https://reliance-engineers.vercel.app/contact',
+  },
+  openGraph: {
+    title: 'Contact Us | Reliance Engineers',
+    description: 'Get in touch with Reliance Engineers. Offices in Wellesley Hills MA, Bloomfield Hills MI, and Toronto ON.',
+    type: 'website',
+    url: 'https://reliance-engineers.vercel.app/contact',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Us | Reliance Engineers',
+    description: 'Get in touch with Reliance Engineers. Offices in Wellesley Hills MA, Bloomfield Hills MI, and Toronto ON.',
+  },
 };
 
 const certifications = [

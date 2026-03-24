@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Accessibility Statement',
   description: 'Reliance Engineers LLC accessibility statement — our commitment to WCAG 2.1 AA standards and Section 508 compliance.',
+  alternates: {
+    canonical: 'https://reliance-engineers.vercel.app/accessibility',
+  },
 };
 
 export default function AccessibilityPage() {
