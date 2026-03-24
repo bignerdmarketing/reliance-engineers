@@ -17,7 +17,7 @@ const leaders = [
   },
   {
     name: 'Anthony Lancellotti, PE',
-    title: 'Principal Engineer, Tunnel & Structural Engineering',
+    title: 'Principal Engineer, Tunnel & Structural Engineering, and Project Management',
     bio: 'Over 40 years in transportation infrastructure and complex tunneling projects. Former National Director of Technical Excellence Centers at Parsons Brinckerhoff. Led multidisciplinary team of 300+ on the Big Dig. MS and BS from Columbia University.',
     photoUrl: 'https://reliance-eng.com/wp-content/uploads/2024/12/anthony-lancellotti.jpg',
     linkedin: 'https://www.linkedin.com/in/tony-lancellotti-55619361/',
@@ -38,7 +38,7 @@ const leaders = [
   },
   {
     name: 'Peter Donahue, PE',
-    title: "Principal Engineer, Owner's Engineering Services",
+    title: "Principal Engineer, Owner and Engineering Services",
     bio: 'Over 50 years of experience including 33 years at WSP with major tunnel projects such as the Big Dig and Port of Miami Tunnel. MBA from New Hampshire College and BS from Roger Williams College. Licensed PE in FL, ME, MA, NH, and VA.',
     photoUrl: 'https://reliance-eng.com/wp-content/uploads/2024/12/250117_RE_02_4158-600x750.jpg',
     linkedin: 'https://www.linkedin.com/in/peter-donahue-a384b498/',
@@ -109,10 +109,10 @@ export default function AboutPage() {
               <h2 id="mission-heading" className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
                 Delivering Innovative Engineering Solutions for Critical Infrastructure
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-brand-muted leading-relaxed mb-6">
                 RE delivers innovative engineering solutions that rise to the challenges and complexities of any critical infrastructure project. We provide dependable, technically sound solutions for optimization and risk mitigation across bridge, tunnel, geotechnical, and project delivery disciplines.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-brand-muted leading-relaxed">
                 Our firm specializes in design, value engineering, project controls, constructability reviews, and construction support — combining the technical depth of a large firm with the responsiveness and accountability of a principal-led practice.
               </p>
             </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
                 {coreValues.map((value) => (
                   <div key={value.name} className="card p-6">
                     <h4 className="font-heading font-bold text-primary mb-1">{value.name}</h4>
-                    <p className="text-gray-600 text-sm">{value.description}</p>
+                    <p className="text-brand-muted text-sm">{value.description}</p>
                   </div>
                 ))}
               </div>
@@ -141,7 +141,7 @@ export default function AboutPage() {
             <h2 id="team-heading" className="text-3xl md:text-4xl font-heading font-bold text-primary">
               Our Team
             </h2>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            <p className="mt-4 text-brand-muted max-w-2xl mx-auto">
               Principal engineers with decades of experience on the most complex infrastructure projects in the nation and abroad.
             </p>
           </div>
@@ -175,7 +175,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-lg font-heading font-bold text-primary mb-1">{office.name}</h3>
                 <p className="text-sm font-body font-semibold text-accent mb-2">{office.label}</p>
-                <p className="text-gray-600 text-sm">{office.address}</p>
+                <p className="text-brand-muted text-sm">{office.address}</p>
               </div>
             ))}
           </div>
