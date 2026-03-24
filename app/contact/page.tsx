@@ -1,6 +1,32 @@
 import type { Metadata } from 'next';
 import { ContactForm } from '@/components/ContactForm';
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Reliance Engineers',
+  legalName: 'Reliance Engineers LLC',
+  url: 'https://reliance-eng.com',
+  telephone: '+1-781-697-8304',
+  email: 'info@reliance-eng.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '30 Yarmouth Road',
+    addressLocality: 'Wellesley Hills',
+    addressRegion: 'MA',
+    postalCode: '02481',
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '42.3085',
+    longitude: '-71.2799',
+  },
+  openingHours: 'Mo-Fr 09:00-17:00',
+  priceRange: '$$',
+  description: 'Multidisciplinary infrastructure engineering consulting firm specializing in bridge and structural engineering, tunnel and underground construction, geotechnical engineering, and project delivery services.',
+};
+
 export const metadata: Metadata = {
   title: 'Contact Us',
   description: 'Get in touch with Reliance Engineers. Offices in Wellesley Hills MA, Bloomfield Hills MI, and Toronto ON.',
@@ -49,6 +75,10 @@ const offices = [
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       {/* Hero */}
       <section className="section bg-primary text-white">
         <div className="container-wide">
