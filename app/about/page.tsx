@@ -5,6 +5,20 @@ import { CTA } from '@/components/CTA';
 export const metadata: Metadata = {
   title: 'About Us',
   description: 'Learn about Reliance Engineers — our mission, leadership team, and commitment to infrastructure engineering excellence since 2013.',
+  alternates: {
+    canonical: 'https://reliance-engineers.vercel.app/about',
+  },
+  openGraph: {
+    title: 'About Us | Reliance Engineers',
+    description: 'Learn about Reliance Engineers — our mission, leadership team, and commitment to infrastructure engineering excellence since 2013.',
+    type: 'website',
+    url: 'https://reliance-engineers.vercel.app/about',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us | Reliance Engineers',
+    description: 'Learn about Reliance Engineers — our mission, leadership team, and commitment to infrastructure engineering excellence since 2013.',
+  },
 };
 
 const leaders = [

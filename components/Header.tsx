@@ -45,7 +45,7 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-white hover:bg-white/10 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          className="md:hidden p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-white hover:bg-white/10 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           style={{ transition: 'background-color 0.2s ease-out' }}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-expanded={mobileOpen}
